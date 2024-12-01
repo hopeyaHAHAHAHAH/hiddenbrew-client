@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D' HIDDEN BREW</title>
+    <link rel="stylesheet" href="style_homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Geist+Mono:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="announcement-bar">
+        <div class="text-wrapper">
+            <!-- Original set of messages -->
+            <div>FREE SHIPPING ON ORDERS OVER $50! 🎉</div>
+            <div>NEW ARRIVALS ARE HERE! CHECK OUT THE LATEST COLLECTION!</div>
+            <div>SIGN UP FOR OUR NEWSLETTER AND GET 10% OFF!</div>
+            <div>EXCLUSIVE DEALS FOR MEMBERS ONLY! JOIN NOW!</div>
+
+            <!-- Duplicate set of messages for continuous scrolling -->
+            <div>FREE SHIPPING ON ORDERS OVER $50! 🎉</div>
+            <div>NEW ARRIVALS ARE HERE! CHECK OUT THE LATEST COLLECTION!</div>
+            <div>SIGN UP FOR OUR NEWSLETTER AND GET 10% OFF!</div>
+            <div>EXCLUSIVE DEALS FOR MEMBERS ONLY! JOIN NOW!</div>
+        </div>
+        <div class="navbar">
+
+            <div class="logo">
+                <div class="hamburger" onclick="shownav()">&#9776;</div> <a href="index.html">D'HIDDEN BREW</a>
+            </div>
+            <br>
+            <br>
+            <div class="nav-cont">
+                <div class="nav-left nav-content">
+                    <a href="index.html">HOME</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="location.html">LOCATION</a>
+                    <a href="contact.html">CONTACT </a>
+                </div>
+                <div class="nav-icons nav-content">
+                    <i class="fa-solid fa-magnifying-glass" href="#search"></i>
+                    <i class="fa-solid fa-cart-shopping" href="#cart"></i>
+                    <i class="fa-solid fa-heart" href="#favorites"></i>
+                    <button class="getstarted"><a href="client-login-register.html">LOGIN</a></button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>YOUR CART</h2>
+            <button id="close-cart" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul id="cart-items">
+            <!-- Cart items here -->
+        </ul>
+        <div class="sidebar-footer">
+            <p id="total-price">TOTAL: $0.00</p>
+            <button class="checkout-button" id="checkout"> <a href="checkout.html"
+                    style="color: white; text-decoration: none;">CHECK OUT</a></button>
+        </div>
+    </div>
+
+    <!-- Favorites Sidebar -->
+    <div id="favorites-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>YOUR FAVORITES</h2>
+            <button id="close-favorites" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul id="favorites-items">
+            <!-- Favorite items here -->
+        </ul>
+        <div class="sidebar-footer">
+            <button class="clear-favorites" id="clear-favorites">CLEAR FAVORITES</button>
+        </div>
+    </div>
+
+    <!-- Search Sidebar -->
+    <div id="search-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>SEARCH</h2>
+            <button id="close-search" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <input type="text" id="search-input" placeholder="Search...">
+        <ul id="search-results">
+            <!-- Search results here -->
+        </ul>
+    </div>
+
+
+
+
+    <div class="float-imgs">
+        <img class="homeimg" src="img/home2.jpg" alt="image">
+        <img src="img/food.png" alt="Floating Image" class="floating-image">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="bestseller">
+        <h1>SHOP OUR BESTSELLER AT D'HIDDEN BREW!</h1>
+        <br>
+        <br>
+        <p>Discover what everyone loves at D'Hidden Brew! From our signature creamy caramel latte to the
+            crowd-favorite mocha frappe, we have a flavor for every coffee lover. Come and experience the best—we're
+            brewing just for you!"</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container">
+        <div class="slider-wrapper">
+
+            <div class="image-list">
+                <img class="image-item" src="img/22.png" alt="img-1">
+                <img class="image-item" src="img/23.png" alt="img-1">
+                <img class="image-item" src="img/24.png" alt="img-1">
+                <img class="image-item" src="img/25.png" alt="img-1">
+                <img class="image-item" src="img/22.png" alt="img-1">
+                <img class="image-item" src="img/23.png" alt="img-1">
+                <img class="image-item" src="img/24.png" alt="img-1">
+                <img class="image-item" src="img/25.png" alt="img-1">
+            </div>
+
+        </div>
+        <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="about-section">
+        <div class="container1">
+            <div class="coffee-machine">
+                <div class="coffee-header">
+                    <div class="coffee-header__buttons coffee-header__button-one"></div>
+                    <div class="coffee-header__buttons coffee-header__button-two"></div>
+                    <div class="coffee-header__display"></div>
+                    <div class="coffee-header__details"></div>
+                </div>
+                <div class="coffee-medium">
+                    <div class="coffe-medium__exit"></div>
+                    <div class="coffee-medium__arm"></div>
+                    <div class="coffee-medium__liquid"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+                    <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+                    <div class="coffee-medium__cup"></div>
+                </div>
+                <div class="coffee-footer"></div>
+            </div>
+        </div>
+
+        <div class="about-txt">
+            <div class="abouts">
+                <h1>about</h1>
+                <p class="about-par">Nestled in the heart of Nagcarlan, Laguna, D'Hidden Brew has been a go-to spot for
+                    coffee lovers since its establishment in 2022. Known for its warm and inviting ambiance, the café
+                    offers a delightful array of coffee blends, specialty teas, and light meals, making it a favorite
+                    among locals and visitors alike. Signature beverages like the rich Hidden Brew, indulgent Choco
+                    Temptation, classic Caramel Macchiato, and refreshing Matcha Sea Salt provide a unique experience
+                    for every palate. Whether you're unwinding with friends or seeking a peaceful retreat, D'Hidden Brew
+                    promises a sip of comfort in every cup.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image-container">
+        <div class="image-item">
+            <img src="img/8.png" alt="Image 1">
+            <button class="item"><a href="menu.html">MENU</a></button>
+        </div>
+
+        <div class="image-item">
+            <img src="img/9.png" alt="Image 2">
+            <button class="item"><a href="location.html">LOCATION</a></button>
+        </div>
+
+        <div class="image-item">
+            <img src="img/10.png" alt="Image 3">
+            <button class="item"><a href="contact.html">CONTACT</a></button>
+        </div>
+    </div>
+
+    <!--
+    <div class="delivery">
+        <h1>available delivery</h1>
+        <img class="deliveryphoto" src="img/11.png" alt="foodpanda grabfood">
+    </div>
+    -->
+
+    <br><br><br>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>OUR MENU</h3>
+                <ul>
+                    <li><a href="menu.html">Coffee-Based</a></li>
+                    <li><a href="menu.html">Non-Coffee</a></li>
+                    <li><a href="menu.html">Pasta</a></li>
+                    <li><a href="menu.html">Pastries</a></li>
+                    <li><a href="menu.html">Snacks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Phone: +1 234 567 890</a></li>
+                    <li><a href="contact.html">Email: dhiddenbrew@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+
+                    <a href="#"><img src="img/13.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/insta.png" alt="Instagram"></a>
+
+                </div>
+                <h3>SUBSCRIBE</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter email for updates">
+                    <br>
+                    <br>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2021 All rights reserved </p>
+            <div>
+                <a href="#">Terms & Conditions</a> | <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="javascript_hp.js"></script>
+
+</body>
+
+</html>
